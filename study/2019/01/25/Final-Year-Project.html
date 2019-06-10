@@ -4,75 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Final Year Project</title>
+    <title>Kevin Exton</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/blog/css/bootstrap.css" />
-    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="/assets/favicon/iconcubeorange-32-17061.png" />
   </head>
-  <body class="bg-dark">
-    <!-- NAVBAR -->
-    <nav
-      class="navbar navbar-expand-md navbar-dark bg-dark-blue sticky-top p-0"
+  <body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top p-0">
+    <a href="#" class="navbar-brand ml-3"><h3>Kevin Exton</h3></a>
+    <button
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
     >
-      <a href="#" class="navbar-brand ml-3"><h3>Kevin Exton</h3></a>
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="https://kcexn.github.io/#work-header" class="nav-link"
-              >Work</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="https://kcexn.github.io/#projects-header" class="nav-link"
-              >Projects</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="https://kcexn.github.io/#education-header" class="nav-link"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="/blog/index.html" class="nav-link active"
-              >Blog</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="https://kcexn.github.io/contact.html" class="nav-link"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="/#work-header" class="nav-link">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#projects-header" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#education-header" class="nav-link">Education</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link active">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="container-fluid bg-dark" id="post">
-  <div class="row text-white">
+  <div class="container-fluid bg-light" id="post">
+  <div class="row">
     <div class="col-md-2 pt-5 d-none d-md-block vertical-right-line">
       <ul class="list-unstyled text-center">
         <li class="mt-3">
-          <a href="/blog/feed.xml" class="btn btn-info"
+          <a href="/feed.xml" class="btn btn-info"
             ><i class="fas fa-rss-square fa-2x"></i> RSS</a
           >
         </li>
         
         <li class="mt-3">
           <a
-            href="/blog/study/2019/01/25/Final-Year-Project.html"
-            class="btn btn-outline-light btn-block"
+            href="/study/2019/01/25/Final-Year-Project.html"
+            class="btn btn-outline-secondary btn-block"
             >Jan 25, 2019 - Final Year Project</a
           >
         </li>
@@ -81,7 +69,7 @@
     </div>
     <div class="col-md-10 col-sm-12" id="post-body">
       <h2 class="display-2">Final Year Project</h2>
-      <h4 class="text-muted ml-4">Kevin Exton</h4>
+      <h4 class="text-muted ml-4"></h4>
       <h5 class="text-muted ml-4 mb-3">January 25, 2019</h5>
       
       <p class="lead mb-3">Over the course of 2018 I worked on my final year project at Monash University, with a focus on wireless communication.</p>
@@ -143,10 +131,9 @@ who did a signal processing subject at university probably can vaguely
 remember. I did signal processing two years prior to this project, and it
 also wasn’t one of my best subjects, so things were definitely a little
 fuzzy to begin with. But it really isn’t a terribly complicated idea, and
-the filter can be visualised as a tapped delay line as shown below.</p>
-<image title="finite impulse response filter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FIR_Filter.svg/500px-FIR_Filter.svg.png" alt="finite impulse response filter" class="img-fluid mb-3" style="background: #fff" />
-
-<p>In the context of my problem where signals suffer from
+the filter can be visualised as a tapped delay line as shown below.
+<img title="finite impulse response filter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FIR_Filter.svg/500px-FIR_Filter.svg.png" alt="finite impulse response filter" class="img-fluid d-block mx-auto" style="background: #fff" />
+In the context of my problem where signals suffer from
 <a href="https://en.wikipedia.org/wiki/Multipath_propagation">multipath propagation</a>
 , <code class="highlighter-rouge">x[n]</code> is the output of the transmitter at a discrete time <code class="highlighter-rouge">n</code> and each
 delay (<code class="highlighter-rouge">z^(-1)</code>) represents the extra excess delay introduced by each
@@ -191,21 +178,23 @@ variety of different channel parameters that the least mean square (LMS)
 filter and one of its variants the normalised least mean square (NLMS)
 filter did just this. The picture below shows the LMS filters tracking
 behaviour compared to the optimal solution at a low-ish SNR.
-<img src="/blog/img/posts/2019-01-26-Final-Year-Project/MeanSquareError-LMS.png" alt="MSE-LMS" title="Low SNR Performance of LMS when tracking solution" />
-There were a couple of notable differences between the LMS filter and the
+<img src="/assets/posts/2019-01-26-Final-Year-Project/MeanSquareError-LMS.png" class="img-fluid d-block mx-auto" /></p>
+
+<p>There were a couple of notable differences between the LMS filter and the
 NLMS filter that I thought were interesting. The most dramatic was the
 fact that the NLMS filter simply wasn’t capable of tracking the optimal
 solution over time at low SNR’s even though it’s initialisation time was
 much faster.
-<img src="/blog/img/posts/2019-01-26-Final-Year-Project/MeanSquareError-NLMS.png" alt="MSE-NLMS" title="Low SNR Performance of NLMS when tracking solution" /></p>
+<img src="/assets/posts/2019-01-26-Final-Year-Project/MeanSquareError-NLMS.png" class="img-fluid d-block mx-auto" /></p>
 
 <p>I include many more details about how my experiments were designed, as
 well as what my overall results were in my <a href="https://drive.google.com/open?id=1kEsqf81pFY29jzULkzd2qBHHLghtqtLW">report</a>.
 There were some other
 interesting behaviours that I observed such as an odd stepping away from
 the optimal solution even at high SNR’s that the NLMS algorithm exhibited.<br />
-<img src="/blog/img/posts/2019-01-26-Final-Year-Project/MeanSquareError-Step.png" alt="MSE-step" />
-I produced all these simulation plots in <a href="https://www.mathworks.com/products/matlab.html">MATLAB</a>.
+<img src="/assets/posts/2019-01-26-Final-Year-Project/MeanSquareError-Step.png" title="MSE-Step" class="img-fluid d-block mx-auto" /></p>
+
+<p>I produced all these simulation plots in <a href="https://www.mathworks.com/products/matlab.html">MATLAB</a>.
 I also implemented a proof of concept on a national instruments software
 defined radio.</p>
 
@@ -216,28 +205,13 @@ defined radio.</p>
 <br />
 
 
-    <!-- FOOTER -->
-    <footer
-      id="blog-footer"
-      class="bg-dark-blue text-white text-center p-0 fixed-bottom"
-    >
-      Copyright &copy; 2019
-    </footer>
+  <!-- FOOTER -->
+  <footer
+    id="blog-footer"
+    class="bg-primary text-light text-center p-0 fixed-bottom"
+  >
+    Copyright &copy; 2019
+  </footer>
+</body>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
