@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kevin Exton</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="/assets/favicon/iconcubeorange-32-17061.png" />
+  </head>
+  <body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <a href="/" class="navbar-brand ml-3"><h3>Kevin Exton</h3></a>
+    <button
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="/#work-header" class="nav-link">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects-header" class="nav-link"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#education-header" class="nav-link"
+            >Education</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/blog.html" class="nav-link active"
+            >Blog</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-light" id="post">
+  <div class="row">
+    <div class="col-md-2 pt-5 d-none d-md-block vertical-right-line">
+      <ul class="list-unstyled text-center">
+        <li class="mt-3">
+          <a href="/feed.xml" class="btn btn-info"
+            ><i class="fas fa-rss-square fa-2x"></i> RSS</a
+          >
+        </li>
+        
+        <li class="mt-3">
+          <a
+            href="/angular/firebase/2019/09/27/kevin-as-a-service.html"
+            class="btn btn-outline-secondary btn-block"
+            >Sep 27, 2019 - Kevin As A Service</a
+          >
+        </li>
+        
+        <li class="mt-3">
+          <a
+            href="/study/2019/01/25/Final-Year-Project.html"
+            class="btn btn-outline-secondary btn-block"
+            >Jan 25, 2019 - Final Year Project</a
+          >
+        </li>
+        
+      </ul>
+    </div>
+    <div class="col-md-10 col-sm-12" id="post-body">
+      <h2 class="display-2">Kevin As A Service</h2>
+      <h4 class="text-muted ml-4"></h4>
+      <h5 class="text-muted ml-4 mb-3">September 27, 2019</h5>
+      
+      <p class="lead mb-3">Firebase functions, Angular SPA, and Google's oAuth2 playground.</p>
+      
+
+      <h1 id="email-notifications">Email Notifications</h1>
+
+<p>A couple of conversations in the office after misaligned schedules and missed communications 
+led to a few missed lunch break catchups led to me cracking the joke that obviously the 
+solution to all of our communications problems was if I present a public API that others can 
+interface with.</p>
+
+<p>In hindsight the joke is not very funny (the joke wasn’t funny not in hindsight either). It did 
+lead me to think about how I would build such an application. Obviously there would need to be 
+some kind of front end user interface that my <del>co-workers</del> users can interact with. There needs 
+to be an email notifications system so that I can receive what my users send me.</p>
+
+<p>In the end I decided I would build a little application with an Angular front end, and Firebase 
+in the backend using Google’s email API to pass notifications back to me. Go take a look 
+<a href="https://sendgridmail-228a0.web.app">here</a>.</p>
+
+<p><img src="/assets/posts/2019-09-27-kevin-as-a-service/FlowDiagram.png" class="img-fluid d-block mx-auto" /></p>
+
+<h1 id="angular-app">Angular App</h1>
+
+<p>The Angular front end is pretty simple, using Bootstrap as styling I put an image, caption, and 
+an angular form into a carousel to produce a <strong>very</strong> simple view. I chose to use angular forms 
+so that potentially, if I ever come back to this project I can create a more dynamic form than 
+the incrediby boring form that I have right now.</p>
+
+<p><img src="/assets/posts/2019-09-27-kevin-as-a-service/Splash.png" class="img-fluid d-block mx-auto" /></p>
+
+<p><img src="/assets/posts/2019-09-27-kevin-as-a-service/BoringForm.png" class="img-fluid d-block mx-auto" /></p>
+
+<p>Maybe if I have some time and interest I’ll revisit this project in the future and make these views a 
+bit prettier, and also add extra dynamic features to the web form so it feels much more like the 
+JSON schema that started the idea for this project to begin with.</p>
+
+<h1 id="firebase-and-google-oauth2">Firebase and Google oAuth2</h1>
+
+<p>I decided to use Firebase as the hosting and back end solution, since it has a generous hobbyist 
+allowance, and free and easy integration with google’s APIs. Following some Medium tutorials like 
+<a href="https://medium.com/@edigleyssonsilva/cloud-functions-for-firebase-sending-e-mail-1f2631d1022e">this</a> one, and playing with the google oAuth2 playground <a href="https://developers.google.com/oauthplayground">here</a>, following this guide provided <a href="https://android.jlelse.eu/firebase-functions-send-email-using-google-oauth2-20c552da6b3e">over here</a>.</p>
+
+<p>I’m reasonably happy with the final result, especially given the amount of time I’ve had recently 
+outside of work hours to pursue projects of interest has not been as much as I’d like.</p>
+
+<p><br /></p>
+
+    </div>
+  </div>
+</div>
+
+<br />
+
+
+  <!-- FOOTER -->
+  <footer
+    id="blog-footer"
+    class="bg-primary text-light text-center p-0 fixed-bottom"
+  >
+    Copyright &copy; 2019
+  </footer>
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"
+></script>
+
+</html>

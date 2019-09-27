@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-06-13T22:55:23+10:00</updated><id>/feed.xml</id><title type="html">Kevin Exton</title><subtitle>Computer Engineer, currently working in the telco space. Welcome.</subtitle><entry><title type="html">Final Year Project</title><link href="/study/2019/01/25/Final-Year-Project.html" rel="alternate" type="text/html" title="Final Year Project" /><published>2019-01-25T12:44:00+11:00</published><updated>2019-01-25T12:44:00+11:00</updated><id>/study/2019/01/25/Final-Year-Project</id><content type="html" xml:base="/study/2019/01/25/Final-Year-Project.html">&lt;p&gt;Other universities and other degrees will also call it
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-27T15:35:38+10:00</updated><id>/feed.xml</id><title type="html">Kevin Exton</title><subtitle>Computer Engineer, currently working in the telco space. Welcome.</subtitle><entry><title type="html">Kevin As A Service</title><link href="/angular/firebase/2019/09/27/kevin-as-a-service.html" rel="alternate" type="text/html" title="Kevin As A Service" /><published>2019-09-27T12:47:00+10:00</published><updated>2019-09-27T12:47:00+10:00</updated><id>/angular/firebase/2019/09/27/kevin-as-a-service</id><content type="html" xml:base="/angular/firebase/2019/09/27/kevin-as-a-service.html">&lt;h1 id=&quot;email-notifications&quot;&gt;Email Notifications&lt;/h1&gt;
+
+&lt;p&gt;A couple of conversations in the office after misaligned schedules and missed communications 
+led to a few missed lunch break catchups led to me cracking the joke that obviously the 
+solution to all of our communications problems was if I present a public API that others can 
+interface with.&lt;/p&gt;
+
+&lt;p&gt;In hindsight the joke is not very funny (the joke wasn’t funny not in hindsight either). It did 
+lead me to think about how I would build such an application. Obviously there would need to be 
+some kind of front end user interface that my &lt;del&gt;co-workers&lt;/del&gt; users can interact with. There needs 
+to be an email notifications system so that I can receive what my users send me.&lt;/p&gt;
+
+&lt;p&gt;In the end I decided I would build a little application with an Angular front end, and Firebase 
+in the backend using Google’s email API to pass notifications back to me. Go take a look 
+&lt;a href=&quot;https://sendgridmail-228a0.web.app&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2019-09-27-kevin-as-a-service/FlowDiagram.png&quot; class=&quot;img-fluid d-block mx-auto&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;angular-app&quot;&gt;Angular App&lt;/h1&gt;
+
+&lt;p&gt;The Angular front end is pretty simple, using Bootstrap as styling I put an image, caption, and 
+an angular form into a carousel to produce a &lt;strong&gt;very&lt;/strong&gt; simple view. I chose to use angular forms 
+so that potentially, if I ever come back to this project I can create a more dynamic form than 
+the incrediby boring form that I have right now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2019-09-27-kevin-as-a-service/Splash.png&quot; class=&quot;img-fluid d-block mx-auto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2019-09-27-kevin-as-a-service/BoringForm.png&quot; class=&quot;img-fluid d-block mx-auto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Maybe if I have some time and interest I’ll revisit this project in the future and make these views a 
+bit prettier, and also add extra dynamic features to the web form so it feels much more like the 
+JSON schema that started the idea for this project to begin with.&lt;/p&gt;
+
+&lt;h1 id=&quot;firebase-and-google-oauth2&quot;&gt;Firebase and Google oAuth2&lt;/h1&gt;
+
+&lt;p&gt;I decided to use Firebase as the hosting and back end solution, since it has a generous hobbyist 
+allowance, and free and easy integration with google’s APIs. Following some Medium tutorials like 
+&lt;a href=&quot;https://medium.com/@edigleyssonsilva/cloud-functions-for-firebase-sending-e-mail-1f2631d1022e&quot;&gt;this&lt;/a&gt; one, and playing with the google oAuth2 playground &lt;a href=&quot;https://developers.google.com/oauthplayground&quot;&gt;here&lt;/a&gt;, following this guide provided &lt;a href=&quot;https://android.jlelse.eu/firebase-functions-send-email-using-google-oauth2-20c552da6b3e&quot;&gt;over here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m reasonably happy with the final result, especially given the amount of time I’ve had recently 
+outside of work hours to pursue projects of interest has not been as much as I’d like.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Email Notifications</summary></entry><entry><title type="html">Final Year Project</title><link href="/study/2019/01/25/Final-Year-Project.html" rel="alternate" type="text/html" title="Final Year Project" /><published>2019-01-25T12:44:00+11:00</published><updated>2019-01-25T12:44:00+11:00</updated><id>/study/2019/01/25/Final-Year-Project</id><content type="html" xml:base="/study/2019/01/25/Final-Year-Project.html">&lt;p&gt;Other universities and other degrees will also call it
 the capstone project, or perhaps, an honours project. This
 was definitely one of the most educational work I did while I was at
 university. The project challenged me to develop research skills,
